@@ -11,13 +11,13 @@ class MyFrame(wx.Frame):
 
         filemenu = wx.Menu()
 
-        filemenu.Append(wx.ID_ABOUT, "&About", " Information about this program")
+        filemenu.Append(wx.ID_ABOUT, "About", " Information about this program")
         filemenu.AppendSeparator()
-        filemenu.Append(wx.ID_EXIT, "E&xit", " Terminate the program")
+        filemenu.Append(wx.ID_EXIT, "Exit", " Terminate the program")
         
         # Creating the menubar.
         menuBar = wx.MenuBar()
-        menuBar.Append(filemenu, "&File")
+        menuBar.Append(filemenu, "File")
         self.SetMenuBar(menuBar)
         self.Show(True)
 
